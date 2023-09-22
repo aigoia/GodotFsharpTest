@@ -1,4 +1,5 @@
 using EgoScript;
+
 namespace RamsesRun.PlayerNode;
 
 public partial class Player : Ramses

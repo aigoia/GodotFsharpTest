@@ -1,9 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://c2rsw3xsiip1m"]
+[gd_scene load_steps=10 format=3 uid="uid://jihiqku5k52e"]
 
-[ext_resource type="Script" path="res://Prefab/Player.cs" id="1_1iam4"]
-[ext_resource type="Texture2D" uid="uid://b77wwgj0bay5" path="res://Asset/Image/Ramses/idle.png" id="2_pdos5"]
-[ext_resource type="Texture2D" uid="uid://dfw3wlunweqsy" path="res://Asset/Image/Ramses/track.png" id="3_2mwx3"]
-[ext_resource type="Texture2D" uid="uid://dmc6w1dacfmww" path="res://Asset/Image/Ramses/walk.png" id="4_ge8nv"]
+[ext_resource type="Script" path="res://PlayerNode/Player.cs" id="1_o1u7m"]
+[ext_resource type="Texture2D" uid="uid://b77wwgj0bay5" path="res://Asset/Image/Ramses/idle.png" id="2_dm4k4"]
+[ext_resource type="Texture2D" uid="uid://dfw3wlunweqsy" path="res://Asset/Image/Ramses/track.png" id="3_d1tp1"]
+[ext_resource type="Texture2D" uid="uid://dmc6w1dacfmww" path="res://Asset/Image/Ramses/walk.png" id="4_s2rbi"]
 
 [sub_resource type="Animation" id="Animation_tgquo"]
 resource_name = "Idle"
@@ -19,7 +19,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_pdos5")]
+"values": [ExtResource("2_dm4k4")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -58,7 +58,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("2_pdos5")]
+"values": [ExtResource("2_dm4k4")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -111,7 +111,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("3_2mwx3")]
+"values": [ExtResource("3_d1tp1")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -152,7 +152,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [ExtResource("4_ge8nv")]
+"values": [ExtResource("4_s2rbi")]
 }
 tracks/1/type = "value"
 tracks/1/imported = false
@@ -188,10 +188,10 @@ _data = {
 }
 
 [node name="Player" type="Node2D"]
-script = ExtResource("1_1iam4")
+script = ExtResource("1_o1u7m")
 
 [node name="Image" type="Sprite2D" parent="."]
-texture = ExtResource("2_pdos5")
+texture = ExtResource("2_dm4k4")
 hframes = 7
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]

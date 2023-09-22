@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://cmj8lxf16uii1"]
+
+[ext_resource type="Script" path="res://Main.cs" id="1_7vdsb"]
+[ext_resource type="Texture2D" uid="uid://6uvdcc3eqil8" path="res://Asset/Tile/map.png" id="2_bp2r6"]
+[ext_resource type="PackedScene" uid="uid://c2rsw3xsiip1m" path="res://Prefab/player.tscn" id="3_5f80k"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_7vdsb")
+
+[node name="World" type="Sprite2D" parent="."]
+position = Vector2(336, 192)
+texture = ExtResource("2_bp2r6")
+
+[node name="Player" parent="." instance=ExtResource("3_5f80k")]
+position = Vector2(196, 244)

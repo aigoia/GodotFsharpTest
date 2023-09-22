@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NPCv4/Mq11vTqRzpZMk2MzNlJAcUNLBbl/QIm3bGz90cG/ELI6+rRmGCNBIkMaGIVBkk0Es/3JSnXd4LT8Vq6g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\orcat\\Documents\\RamsesRun\\EgoScript\\EgoScript.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\orcat\\.nuget\\packages\\fsharp.core\\7.0.400\\fsharp.core.7.0.400.nupkg.sha512"
+  ],
+  "logs": []
+}

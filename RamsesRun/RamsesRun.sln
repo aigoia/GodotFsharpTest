@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RamsesRun", "RamsesRun.csproj", "{9A636975-500E-4F39-8EF4-4623BF1BDCEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A636975-500E-4F39-8EF4-4623BF1BDCEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A636975-500E-4F39-8EF4-4623BF1BDCEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A636975-500E-4F39-8EF4-4623BF1BDCEC}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{9A636975-500E-4F39-8EF4-4623BF1BDCEC}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{9A636975-500E-4F39-8EF4-4623BF1BDCEC}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{9A636975-500E-4F39-8EF4-4623BF1BDCEC}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

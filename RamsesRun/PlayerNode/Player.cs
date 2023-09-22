@@ -1,7 +1,5 @@
-using Godot;
 using EgoScript;
-
-namespace RamsesRun.Prefab;
+namespace RamsesRun.PlayerNode;
 
 public partial class Player : Ramses
 { 

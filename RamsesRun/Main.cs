@@ -1,5 +1,3 @@
-using System.Threading.Tasks;
-using EgoScript;
 using Godot;
 
 namespace RamsesRun;

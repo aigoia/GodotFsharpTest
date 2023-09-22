@@ -27,6 +27,7 @@ type Ramses() =
         horizontalMovement <- if Input.IsKeyPressed(Left) then -1f
                               elif Input.IsKeyPressed(Right) then 1f
                               else 0f
+                              
         track <- Input.IsKeyPressed(Down)
         velocity.X <- horizontalMovement * MoveSpeed
         this.MoveLocalX(velocity.X * (float32)deltaTime)

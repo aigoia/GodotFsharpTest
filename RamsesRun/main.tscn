@@ -17,6 +17,7 @@ texture = ExtResource("2_bp2r6")
 position = Vector2(196, 244)
 
 [node name="AsyncTest" type="Node2D" parent="."]
+visible = false
 script = ExtResource("4_ln41j")
 
 [node name="Icon" type="Sprite2D" parent="AsyncTest"]

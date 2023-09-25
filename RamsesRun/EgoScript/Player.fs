@@ -1,6 +1,5 @@
 namespace EgoScript
 open Godot
-open System
 
 type Ramses() =
     inherit Node2D()
@@ -17,12 +16,7 @@ type Ramses() =
 
     member this.ImageNode = this.GetNode<Sprite2D>("Image")
     member this.AnimationNode = this.GetNode<AnimationPlayer>("AnimationPlayer")
-    
-    member public this.Start() = this.AnimationNode.Play("Idle")
-    member public this.Update(deltaTime) =
-        this.Action(deltaTime)
-        this.State()
-    
+
     member this.Action(deltaTime: double) =
         horizontalMovement <- if Input.IsKeyPressed(Left) then -1f
                               elif Input.IsKeyPressed(Right) then 1f
@@ -39,3 +33,9 @@ type Ramses() =
         this.AnimationNode.Play(if velocity.X <> 0f then "Walk"
                                 elif track then "Track"
                                 else "Idle")
+
+    member public this.Start() = this.AnimationNode.Play("Idle")
+    member public this.Update(deltaTime) =
+        this.Action(deltaTime)
+        this.State()
+    

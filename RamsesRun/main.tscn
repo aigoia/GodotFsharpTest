@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://cmj8lxf16uii1"]
+[gd_scene load_steps=6 format=3 uid="uid://cmj8lxf16uii1"]
 
 [ext_resource type="Script" path="res://Main.cs" id="1_7vdsb"]
 [ext_resource type="Texture2D" uid="uid://6uvdcc3eqil8" path="res://Asset/Tile/map.png" id="2_bp2r6"]
 [ext_resource type="PackedScene" uid="uid://jihiqku5k52e" path="res://PlayerNode/player.tscn" id="3_5f80k"]
+[ext_resource type="Script" path="res://AsyncTest.cs" id="4_ln41j"]
+[ext_resource type="Texture2D" uid="uid://bfdjya8qlpruw" path="res://Asset/Icon.png" id="5_rtglb"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_7vdsb")
@@ -13,3 +15,10 @@ texture = ExtResource("2_bp2r6")
 
 [node name="Player" parent="." instance=ExtResource("3_5f80k")]
 position = Vector2(196, 244)
+
+[node name="AsyncTest" type="Node2D" parent="."]
+script = ExtResource("4_ln41j")
+
+[node name="Icon" type="Sprite2D" parent="AsyncTest"]
+position = Vector2(320, 160)
+texture = ExtResource("5_rtglb")

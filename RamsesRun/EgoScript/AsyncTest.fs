@@ -16,7 +16,7 @@ type IconRotate() =
         async {
             while isRotate do
                 this.IconNode.RotationDegrees <- this.IconNode.RotationDegrees + RotateAngle
-                do! Task.Delay(DelayTime) |> Async.AwaitTask
+                do! Async.Sleep(DelayTime)
         }
 
     member public this.Start() = this.AsyncRoutine() |> Async.StartImmediate
